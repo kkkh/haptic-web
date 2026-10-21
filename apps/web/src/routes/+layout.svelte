@@ -2,6 +2,7 @@
 	import migrations from '$lib/database/migrations/migrations.sql?raw';
 	import seed from '$lib/database/migrations/seed.sql?raw';
 	import { loadSettings } from '@/api/settings';
+	import ComplianceFooter from '@/components/layout/compliance-footer.svelte';
 	import Footer from '@/components/layout/footer.svelte';
 	import Header from '@/components/layout/header.svelte';
 	import Sidebar from '@/components/layout/sidebar.svelte';
@@ -128,6 +129,8 @@
 		</div>
 	</main>
 {/if}
+
+<ComplianceFooter />
 
 <style>
 	/* Custom scrollbar */
